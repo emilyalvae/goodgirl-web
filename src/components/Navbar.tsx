@@ -15,10 +15,10 @@ const MENU_DATA = {
   mujer: {
     title: "Mujer",
     items: [
+      "​Ropa Interior",
+      "Pijamas",
       "Lencería",
-      "Brasieres",
-      "Calzones",
-      "Conjuntos",
+      "Accesorios",
     ],
   },
 
@@ -26,9 +26,9 @@ const MENU_DATA = {
     title: "Niñas",
     items: [
       "Ropa interior",
-      "Brasieres",
-      "Calzones",
-      "Conjuntos",
+      "Pijamas",
+      "Prendas básicas",
+      "Accesorios",
     ],
   },
 
@@ -36,20 +36,15 @@ const MENU_DATA = {
     title: "¡Promociones!",
     items: [
       "3x2",
-      "Descuentos",
-      "Ofertas especiales",
+      "Packs",
+      "Liquidaciones",
     ],
   },
 };
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const [mujerDropdown, setMujerDropdown] = useState(false);
-  const [ninasDropdown, setNinasDropdown] = useState(false);
-  const [promosDropdown, setPromosDropdown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -100,23 +95,15 @@ export default function Navbar() {
             </a>
 
             {/* Mujer */}
-            <div
-              className="relative py-2 group"
-              onMouseEnter={() => setMujerDropdown(true)}
-              onMouseLeave={() => setMujerDropdown(false)}
-            >
-              <button className="flex items-center space-x-1 hover:text-[#D88285] transition-colors">
+            <div className="relative group">
+              <button className="flex items-center space-x-1 py-2 hover:text-[#D88285] transition-colors">
                 <span>{MENU_DATA.mujer.title}</span>
 
-                <ChevronDown
-                  className={`w-4 h-4 opacity-70 transition-transform duration-200 ${
-                    mujerDropdown ? "rotate-180" : ""
-                  }`}
-                />
+                <ChevronDown className="w-4 h-4 opacity-70 transition-transform duration-200 group-hover:rotate-180" />
               </button>
 
-              {mujerDropdown && (
-                <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-rose-100 py-2 z-50 animate-in fade-in duration-150">
+              <div className="absolute top-full left-0 w-48 pt-2 opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200 ease-out group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:pointer-events-auto">
+                <div className="bg-white rounded-xl shadow-xl border border-rose-100 py-2 overflow-hidden">
                   {MENU_DATA.mujer.items.map((item) => (
                     <a
                       key={item}
@@ -127,27 +114,19 @@ export default function Navbar() {
                     </a>
                   ))}
                 </div>
-              )}
+              </div>
             </div>
 
             {/* Niñas */}
-            <div
-              className="relative py-2 group"
-              onMouseEnter={() => setNinasDropdown(true)}
-              onMouseLeave={() => setNinasDropdown(false)}
-            >
-              <button className="flex items-center space-x-1 hover:text-[#D88285] transition-colors">
+            <div className="relative group">
+              <button className="flex items-center space-x-1 py-2 hover:text-[#D88285] transition-colors">
                 <span>{MENU_DATA.ninas.title}</span>
 
-                <ChevronDown
-                  className={`w-4 h-4 opacity-70 transition-transform duration-200 ${
-                    ninasDropdown ? "rotate-180" : ""
-                  }`}
-                />
+                <ChevronDown className="w-4 h-4 opacity-70 transition-transform duration-200 group-hover:rotate-180" />
               </button>
 
-              {ninasDropdown && (
-                <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-rose-100 py-2 z-50 animate-in fade-in duration-150">
+              <div className="absolute top-full left-0 w-48 pt-2 opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200 ease-out group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:pointer-events-auto">
+                <div className="bg-white rounded-xl shadow-xl border border-rose-100 py-2 overflow-hidden">
                   {MENU_DATA.ninas.items.map((item) => (
                     <a
                       key={item}
@@ -158,27 +137,19 @@ export default function Navbar() {
                     </a>
                   ))}
                 </div>
-              )}
+              </div>
             </div>
 
             {/* Promociones */}
-            <div
-              className="relative py-2 group"
-              onMouseEnter={() => setPromosDropdown(true)}
-              onMouseLeave={() => setPromosDropdown(false)}
-            >
-              <button className="flex items-center space-x-1 font-semibold text-[#D88285] hover:opacity-80 transition-opacity">
+            <div className="relative group">
+              <button className="flex items-center space-x-1 py-2 font-semibold text-[#D88285] hover:opacity-80 transition-opacity">
                 <span>{MENU_DATA.promociones.title}</span>
 
-                <ChevronDown
-                  className={`w-4 h-4 opacity-70 transition-transform duration-200 ${
-                    promosDropdown ? "rotate-180" : ""
-                  }`}
-                />
+                <ChevronDown className="w-4 h-4 opacity-70 transition-transform duration-200 group-hover:rotate-180" />
               </button>
 
-              {promosDropdown && (
-                <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-rose-100 py-2 z-50 animate-in fade-in duration-150">
+              <div className="absolute top-full left-0 w-48 pt-2 opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200 ease-out group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:pointer-events-auto">
+                <div className="bg-white rounded-xl shadow-xl border border-rose-100 py-2 overflow-hidden">
                   {MENU_DATA.promociones.items.map((item) => (
                     <a
                       key={item}
@@ -189,7 +160,7 @@ export default function Navbar() {
                     </a>
                   ))}
                 </div>
-              )}
+              </div>
             </div>
           </nav>
 
