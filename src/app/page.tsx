@@ -2,6 +2,7 @@ import AnnouncementBar from "@/components/AnnouncementBar";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Categories from "@/components/Categories";
+import BestSellers from "@/components/BestSellers";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
 
       <Categories />
 
+      <BestSellers />
+      
     </main>
   );
 }

@@ -6,7 +6,7 @@ const CATEGORY_CARDS = [
     image: "/images/categories/lenceria.jpg",
   },
   {
-    category: "brasieres",
+    category: "brasieres",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     title: "Brasieres",
     subtitle: "Diseñados para sentirte cómoda y segura.",
     image: "/images/categories/brasieres.jpg",
