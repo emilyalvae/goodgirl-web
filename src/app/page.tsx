@@ -5,6 +5,7 @@ import Categories from "@/components/Categories";
 import BestSellers from "@/components/BestSellers";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
+import Exclusive from "@/components/Exclusive";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
       <BestSellers />
 
       <About />
+
+      <Exclusive />
 
       <Testimonials />
 
