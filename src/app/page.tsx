@@ -6,6 +6,7 @@ import BestSellers from "@/components/BestSellers";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import Exclusive from "@/components/Exclusive";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +27,8 @@ export default function Home() {
       <Exclusive />
 
       <Testimonials />
+
+      <Footer />
 
     </main>
   );
