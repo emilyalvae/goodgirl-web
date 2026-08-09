@@ -7,7 +7,7 @@ export default function About() {
         {/* Imagen */}
         <div className="lg:col-span-5 relative">
           <img
-            src="/images/about/about-goodgirl.jpg"
+            src="/images/lenceria.jpeg"
             alt="Conoce Good Girl"
             className="rounded-2xl object-cover w-full h-[450px] shadow-lg"
           />

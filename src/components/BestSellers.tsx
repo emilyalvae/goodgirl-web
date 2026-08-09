@@ -12,7 +12,7 @@ const BEST_SELLERS = [
     oldPrice: 69.9,
     rating: 4.9,
     tag: "Más vendido",
-    image: "/images/products/bralette-negro.jpg",
+    image: "/images/lenceria2.jpeg",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const BEST_SELLERS = [
     oldPrice: null,
     rating: 4.8,
     tag: "Favorito",
-    image: "/images/products/bralette-rosa.jpg",
+    image: "/images/lenceria2.jpeg",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const BEST_SELLERS = [
     oldPrice: 89.9,
     rating: 4.9,
     tag: "Oferta",
-    image: "/images/products/bata-rosa.jpg",
+    image: "/images/lenceria2.jpeg",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const BEST_SELLERS = [
     oldPrice: null,
     rating: 4.7,
     tag: null,
-    image: "/images/products/conjunto-floral.jpg",
+    image: "/images/lenceria2.jpeg",
   },
 ];
 

@@ -9,28 +9,28 @@ const TESTIMONIALS = [
     name: "Valeria",
     text: "Me encantó la calidad y lo cómoda que es. Se nota que cada detalle está pensado para que una se sienta increíble.",
     rating: 5,
-    image: "/images/testimonials/valeria.jpg",
+    image: "/images/lenceria.jpeg",
   },
   {
     id: 2,
     name: "Camila",
     text: "El conjunto es precioso y quedó tal como esperaba. Definitivamente volvería a comprar en Good Girl.",
     rating: 5,
-    image: "/images/testimonials/camila.jpg",
+    image: "/images/lenceria.jpeg",
   },
   {
     id: 3,
     name: "Sofía",
     text: "Me sorprendió muchísimo la comodidad. Además, el diseño es delicado y súper bonito.",
     rating: 5,
-    image: "/images/testimonials/sofia.jpg",
+    image: "/images/lenceria.jpeg",
   },
   {
     id: 4,
     name: "Andrea",
     text: "La atención fue excelente y mi pedido llegó perfecto. Me encantó mi compra.",
     rating: 5,
-    image: "/images/testimonials/andrea.jpg",
+    image: "/images/lenceria.jpeg",
   },
 ];
 

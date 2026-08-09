@@ -12,7 +12,7 @@ const EXCLUSIVE_PRODUCTS = [
     oldPrice: null,
     rating: 5,
     tag: "Nuevo",
-    image: "/images/products/exclusive-1.jpg",
+    image: "/images/lenceria2.jpeg",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const EXCLUSIVE_PRODUCTS = [
     oldPrice: null,
     rating: 4.9,
     tag: "Nuevo",
-    image: "/images/products/exclusive-2.jpg",
+    image: "/images/lenceria2.jpeg",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const EXCLUSIVE_PRODUCTS = [
     oldPrice: 84.9,
     rating: 5,
     tag: "Exclusivo",
-    image: "/images/products/exclusive-3.jpg",
+    image: "/images/lenceria2.jpeg",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const EXCLUSIVE_PRODUCTS = [
     oldPrice: null,
     rating: 4.9,
     tag: "Nuevo",
-    image: "/images/products/exclusive-4.jpg",
+    image: "/images/lenceria2.jpeg",
   },
 ];
 

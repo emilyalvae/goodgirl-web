@@ -3,19 +3,19 @@ const CATEGORY_CARDS = [
     category: "lenceria",
     title: "Lencería",
     subtitle: "Elegancia y comodidad para cada momento.",
-    image: "/images/categories/lenceria.jpg",
+    image: "/images/lenceria.jpeg",
   },
   {
     category: "brasieres",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     title: "Brasieres",
     subtitle: "Diseñados para sentirte cómoda y segura.",
-    image: "/images/categories/brasieres.jpg",
+    image: "/images/lenceria.jpeg",
   },
   {
     category: "calzones",
     title: "Calzones",
     subtitle: "Comodidad que se adapta a ti.",
-    image: "/images/categories/calzones.jpg",
+    image: "/images/lenceria.jpeg",
   },
 ];
 
