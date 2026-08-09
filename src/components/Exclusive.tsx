@@ -63,8 +63,9 @@ export default function Exclusive() {
   return (
     <section
       id="exclusive"
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
+      className="bg-[#f8e4e2] py-16"
     >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Encabezado */}
       <div className="text-center space-y-3 mb-10">
         <Sparkles className="w-7 h-7 text-[#D88285] mx-auto" />
@@ -162,6 +163,7 @@ export default function Exclusive() {
             </div>
           </div>
         ))}
+      </div>
       </div>
 
       {/* Vista rápida */}

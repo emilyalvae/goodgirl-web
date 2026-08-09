@@ -63,10 +63,11 @@ export default function BestSellers() {
   return (
     <section
       id="catalogo"
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
+      className="bg-[#f8e4e2] py-16"
     >
-      {/* Encabezado */}
-      <div className="text-center space-y-3 mb-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Encabezado */}
+        <div className="text-center space-y-3 mb-10">
         <span className="text-xs uppercase tracking-widest text-[#D88285] font-semibold">
           Favoritos de la Comunidad
         </span>
@@ -81,7 +82,8 @@ export default function BestSellers() {
         </p>
 
         <div className="w-12 h-0.5 bg-[#F2D0CA] mx-auto rounded-full" />
-      </div>
+        </div>
+      
 
       {/* Productos */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -161,6 +163,7 @@ export default function BestSellers() {
           </div>
         ))}
       </div>
+    </div>
 
       {/* Modal - Vista rápida */}
       {quickViewProduct && (
